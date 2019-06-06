@@ -10,3 +10,8 @@ constraints
 --store last time chrome was used or app did something, if last time was before reset point(which time you can set)
 -- then reset
 --or could store the last time something was reset, if time is greater than 24 hours, then reset
+
+characteristics
+-run in background
+-Browser action mode, can always be seen in toolbar
+-
