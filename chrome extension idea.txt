@@ -1,0 +1,12 @@
+﻿make an app that only allows you to view a website for an amount of alloted time each day
+i.e youtube allowence 1hour means that you can only look at youtube for one hour each day
+
+constraints
+-could be hard to know when someone is using those websites
+--perhaps you could check the link of the current open tab,
+-- and if it corrosponds to whatever you have an allowence for then 
+-- then you could say, start the countdown of the daily allowence
+-time, knowing when to reset
+--store last time chrome was used or app did something, if last time was before reset point(which time you can set)
+-- then reset
+--or could store the last time something was reset, if time is greater than 24 hours, then reset
