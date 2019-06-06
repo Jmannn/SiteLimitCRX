@@ -1,4 +1,6 @@
-﻿make an app that only allows you to view a website for an amount of alloted time each day
+--Keep in mind this is a learning project--
+
+make an app that only allows you to view a website for an amount of alloted time each day
 i.e youtube allowence 1hour means that you can only look at youtube for one hour each day
 
 constraints
