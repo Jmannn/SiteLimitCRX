@@ -16,4 +16,5 @@ constraints
 characteristics
 -run in background
 -Browser action mode, can always be seen in toolbar
--
+-should include a game that works like a snooze bar, the game will be a random number guessing game
+--because it will be easy to implement and always retains the same amount of difficulty
