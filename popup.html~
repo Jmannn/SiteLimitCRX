@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SiteLimit</title>
+  </head>
+  <body>
+    <h2 id="greet">SiteLimit</h2>
+  </body>
+</html>
