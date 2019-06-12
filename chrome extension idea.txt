@@ -21,3 +21,4 @@ characteristics
 
 -How to store data-
 https://groups.google.com/a/chromium.org/forum/#!topic/chromium-extensions/Efa7l5fmXXk
+https://developer.chrome.com/extensions/storage
