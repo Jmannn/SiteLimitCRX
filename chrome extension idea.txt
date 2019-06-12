@@ -18,3 +18,6 @@ characteristics
 -Browser action mode, can always be seen in toolbar
 -should include a game that works like a snooze bar, the game will be a random number guessing game
 --because it will be easy to implement and always retains the same amount of difficulty
+
+-How to store data-
+https://groups.google.com/a/chromium.org/forum/#!topic/chromium-extensions/Efa7l5fmXXk
