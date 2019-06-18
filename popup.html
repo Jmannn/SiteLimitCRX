@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>Hello World</title>
-        <script src="jquery-3.1.0.min.js">
-            
-        </script>
-        <script src="popup.js">
-            
-        </script>
+        <title>Budget Manager</title>
+        <script src="jquery-3.1.0.min.js"></script>
+        <script src="popup.js"></script>
     </head>
     <body>
-        <h2 id="greet">SiteLimit</h2>
-        <input id="site" type="text"/>
-	<input id="addsite" type="submit" value="add"/>
+        <h1>Budget Manager</h1>
+        <h2>Total Spent: <span id="total">0</span></h2>
+        <h2>Limit: <span id="limit">0</span></h2>
+        <h3>Enter Amount</h3>
+        <input id="amount" type="text">
+        <input id="spendAmount" type="submit" value="Spend"/>
     </body>
 </html>
