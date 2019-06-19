@@ -12,12 +12,17 @@ constraints
 --store last time chrome was used or app did something, if last time was before reset point(which time you can set)
 -- then reset
 --or could store the last time something was reset, if time is greater than 24 hours, then reset
+-need to validate input in a way that will ensure that the entire website is stored.
+--it will store everything before the first single slash
+--it will have to check for https at the start
 
 characteristics
 -run in background
 -Browser action mode, can always be seen in toolbar
 -should include a game that works like a snooze bar, the game will be a random number guessing game
 --because it will be easy to implement and always retains the same amount of difficulty
+-Make it so they have to go into settings and complete a puzzle to remove a link
+-options page should have check boxes and a list of things to remove
 
 -How to store data-
 https://groups.google.com/a/chromium.org/forum/#!topic/chromium-extensions/Efa7l5fmXXk
