@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "Hello World Demo",
-  "description": "A hello world extension!",
+  "name": "SiteLimit",
+  "description": "Limits the amount of time you can spend on a website",
   "version": "1.0",
   "icons": {
     "128": "128.png",
@@ -11,7 +11,15 @@
   },
 
   "browser_action": {
-    "default_icon": "icon16.png",
+    "default_icon": "16.png",
     "default_popup": "popup.html"
-  }
+  },
+    "options_page": "options.html",
+
+
+    "permissions": [
+          "storage",
+          "notifications",
+          "contextMenus"
+        ]
 }

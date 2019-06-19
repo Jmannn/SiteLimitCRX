@@ -1,39 +1,30 @@
+//everything works but storage
 $(function(){
+    $('#addsite').click(function(){
+	//code to do stuff goes here
+	alert();
+	//document.body.innerHTML = '';//this is for testing
+	chrome.storage.sync.get(['links', 'limits'],function(blockedSites){
+	    var links = new Array(1);
+	    var timeLimits = new Array(1);
+	    //I think this block of text is the problem
+	    if (blockedSites.links){
+		links = links.concat(blockedSites.links);
+		timeLimits = timeLimits.concat(blockedSites.limits);
+	    }
 
-    chrome.storage.sync.get(['total','limit'],function(budget){
-        $('#total').text(budget.total);
-        $('#limit').text(budget.limit);
-    });
+            links.push($('#site').val());
 
-    $('#spendAmount').click(function(){
-        chrome.storage.sync.get(['total', 'limit'],function(budget){
-            var newTotal = 0;
-            if (budget.total){
-                newTotal += parseInt(budget.total);
-            }
+	    chrome.storage.sync.set({'links': links}, function(){
+		document.write("set workds");
 
-            var amount = $('#amount').val();
-            if (amount){
-                newTotal += parseInt(amount);
-            }
+	    });
+	    chrome.storage.sync.set({'limits': timeLimits}, function(){
+		//document.write("set workds");
 
-            chrome.storage.sync.set({'total': newTotal}, function(){               
-                if (amount && newTotal >= budget.limit){
-                    var notifOptions = {
-                        type: "basic",
-                        iconUrl: "icon48.png",
-                        title: "Limit reached!",
-                        message: "Uh oh, look's like you've reached your alloted limit."
-                };
-                chrome.notifications.create('limitNotif', notifOptions);
+	    });
 
-            }
-            });
-            $('#total').text(newTotal);
-            $('#amount').val('');
+	});
 
-           
-
-        });
-    });
+    })
 });
